@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon运营星空挑战</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="castle-container">
+        <h1 class="title">🌌 Amazon运营星空挑战 🚀</h1>
+        
+        <div class="game-panel">
+            <div class="status-bar">
+                <div class="timer">🕒 剩余时间：<span id="time">60</span>s</div>
+                <div class="score">⭐ 星钻：<span id="score">0</span></div>
+            </div>
+
+            <div id="question" class="scroll-parchment">
+                <p>点击开始按钮启程！</p>
+            </div>
+
+            <div class="controls">
+                <button onclick="startGame()" class="medieval-btn">⚔️ 开始冒险</button>
+                <button onclick="submitAnswer()" class="medieval-btn">📜 提交答案</button>
+            </div>
+
+            <div id="feedback" class="feedback-box"></div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
